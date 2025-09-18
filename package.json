@@ -1,0 +1,23 @@
+{
+  "name": "ghost-ai-whatsapp-crypto-bot",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18.17.0" },
+  "scripts": {
+    "dev": "node --env-file=.env src/index.js",
+    "start": "node src/index.js",
+    "prisma:gen": "prisma generate",
+    "prisma:mig": "prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.0",
+    "axios": "^1.7.4",
+    "ccxt": "^4.3.36",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "technicalindicators": "^3.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.0"
+  }
+}
